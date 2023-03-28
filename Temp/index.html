@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,57 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hello</h1>
+
+    <div class="container">
+        <img src="/DevWeb_UFC/MyClass/login/pngwing.com.png" alt="logo" id="logo">
+        <form id="login">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password" name="" id="">
+            <button>Login</button>
+        </form>
+    </div>
+
+    <script>
+        const login = document.getElementById('login');
+        const username = document.querySelector('input[type="text"]');
+        const password = document.querySelector('input[type="password"]');
+
+        login.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (username.value === 'admin' && password.value === 'admin') {
+                alert('Login efetuado com sucesso!');
+            } else {
+                alert('Usuário ou senha incorretos!');
+            }
+        });
+
+        // <form @submit.prevent="login">
+        //     <input type="text" v-model="username">
+        //     <input type="password" v-model="password">
+        //     <button>Login</button> z
+        // </form>
+        // new Vue({
+        //     el: '#login',
+        //     data: {
+        //         username: '',
+        //         password: ''
+        //     },
+        //     methods: {
+        //         login() {
+        //             if (this.username === 'admin' && this.password === 'admin') {
+        //                 alert('Login efetuado com sucesso!');
+        //             } else {
+        //                 alert('Usuário ou senha incorretos!');
+        //             }
+        //         }
+        //     }
+        // });
+        
+        
+
+    </script>
+
+    
+
 </body>
 </html>
