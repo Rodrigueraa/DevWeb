@@ -12,7 +12,7 @@
 
 @media only screen and (min-width: 961px){
     body{
-        background-color: green;
+        background-color: FFFFFF;
     }
 }
 
@@ -51,4 +51,12 @@ button{
     display: block;
     width: 200px;  
     height: 200px;
+}
+
+.footer{
+    background-color: #9AA4FF;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    
 }
