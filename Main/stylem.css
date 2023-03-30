@@ -10,18 +10,18 @@ body{
     height: 100px;
 }
 
-.nav{
-    list-style: none;
-    font-size: large;
-    position: relative;
-    display: inline;
-    margin: 0 auto;
-}
-
-nav{
-    position: absolute;
-}
-
 nav li{
     display: inline;
+}
+
+.lateral{
+    background-color: #9AA4FF;
+    width: 200px;
+    height: 100vh;
+}
+
+.footer{
+    background-color: #5869ff;
+    width: 200px;
+    height: 50px;
 }
